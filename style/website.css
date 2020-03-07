@@ -1,0 +1,26 @@
+body {
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    text-align: center;
+    border-width: 2px;
+    border-color: gray;
+    border-style: dashed;
+    padding: 2em;
+}
+
+body ul {
+    width: max-content;
+    max-width: max-content;
+    min-width: max-content;
+    margin: inherit;
+    padding: 0;
+    text-align: center;
+}
+
+body ul li {
+    text-align: left;
+    list-style-type: none;
+}
+
