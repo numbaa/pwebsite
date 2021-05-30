@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <meta charset="utf-8" />
-        <title>Zhennan Tu's Personal Website</title>
-        <link rel="stylesheet" href="style/website.css" />
-    </header>
-    <body>
-        <h1>Zhennan Tu's Personal Website</h1>
-        <ul>
-            <li><a href="blog/">Blog</a></li>
-            <li><a href="https://github.com/numbaa">Github</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </body>
+<!--学前端啦-->
+<head>
+    <meta charset="utf-8">
+    <title>照猫画虎式学习前端中...</title>
+    <!-- <link rel="stylesheet" href="https://cdn.staticfile.org/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/normalize/3.0.2/normalize.css"> -->
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--custom.css从skeleton的例子改的-->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+            <!--Herb Sutter's Mill-->
+            <h2 class="title">NB's Mill</h2>
+        </section>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="index.html">主页</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="">归档</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="">关于</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">                  <!--主体-->
+            <div class="eight columns">    <!--左边那列--文章摘要-->
+                <div class="docs-section">
+                    <h4 class="docs-header">文章1</h4>
+                    <p>文章摘要</p>
+                    <p>文章摘要</p>
+                </div>
+                <div class="docs-section">
+                    <h4 class="docs-header">文章2</h4>
+                    <p>文章摘要</p>
+                    <p>文章摘要</p>
+                </div>
+                <div class="docs-section">
+                    <h4 class="docs-header">文章2</h4>
+                    <p>文章摘要</p>
+                    <p>文章摘要</p>
+                </div>
+                <div class="翻页"></div>
+            </div>
+
+            <div class="four columns">    <!--右边那列-->
+                <div class="row">
+                    <form class="search-form" method="GET" action="https://tuzhennan.com">
+                        <input class="search-input" type="search" name="s" placeholder="搜索...">
+                    </form>
+                </div>
+                <div class="row">
+                    <h5>阿巴阿巴</h5>
+                    <p>瞎几把说1</p>
+                    <p>瞎几把说2</p>
+                </div>
+                <div class="row">
+                    <h5>归档</h5>
+                    <ul>
+                        <li>2021年5月(2)</li>
+                        <li>2021年4月(1)</li>
+                        <li>2021年3月(4)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">           <!--页脚-->
+            
+        </div>
+    </div>
+</body>
 </html>
