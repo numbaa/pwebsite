@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html>
-<!--学前端啦-->
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>照猫画虎式学习前端中...</title>
     <!-- <link rel="stylesheet" href="https://cdn.staticfile.org/skeleton/2.0.4/skeleton.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/normalize/3.0.2/normalize.css"> -->
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="~/css/skeleton.css">
+    <link rel="stylesheet" href="~/css/normalize.css">
     <!--custom.css从skeleton的例子改的-->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="~/css/custom.css">
 </head>
-
 <body>
     <div class="container">
         <section class="header">
@@ -35,22 +33,10 @@
         </nav>
         <div class="row">                  <!--主体-->
             <div class="eight columns">    <!--左边那列--文章摘要-->
-                <div class="docs-section">
-                    <h4 class="docs-header">文章1</h4>
-                    <p>文章摘要</p>
-                    <p>文章摘要</p>
-                </div>
-                <div class="docs-section">
-                    <h4 class="docs-header">文章2</h4>
-                    <p>文章摘要</p>
-                    <p>文章摘要</p>
-                </div>
-                <div class="docs-section">
-                    <h4 class="docs-header">文章2</h4>
-                    <p>文章摘要</p>
-                    <p>文章摘要</p>
-                </div>
-                <div class="翻页"></div>
+                <main>
+                    @RenderBody()
+                </main>
+                
             </div>
 
             <div class="four columns">    <!--右边那列-->
@@ -73,10 +59,21 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="row">           <!--页脚-->
+
             
         </div>
+        <div class="row">           <!--页脚-->
+            <div class="footer">
+                <footer>
+                    &copy; 2021 - pwebsite</a>
+                </footer>
+            </div>
+        </div>
+
     </div>
+
+    <script src="~/js/main.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
