@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +14,7 @@ namespace pwebsite.Data
         {
         }
 
+        //TODO: 加数量限制
         public DbSet<pwebsite.Models.Summary> Summary { get; set; }
     }
 }
