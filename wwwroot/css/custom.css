@@ -69,3 +69,11 @@ footer {
   height: 28px;
   margin-top: 12px;
 }
+
+.next-page .prev-page {
+    display: inline;
+}
+
+.summary-section {
+    display: block;
+}

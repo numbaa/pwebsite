@@ -14,7 +14,8 @@ namespace pwebsite.Data
         {
         }
 
-        //TODO: 加数量限制
         public DbSet<pwebsite.Models.Summary> Summary { get; set; }
+
+        public DbSet<pwebsite.Models.Article> Article { get; set; }
     }
 }

@@ -5,21 +5,18 @@ using System.Threading.Tasks;
 
 namespace pwebsite.Models
 {
-    public class Summary
+    public class Article
     {
-
         public int ID { get; set; }
 
         public string TitleURL { get; set; }
 
         public string Title { get; set; }
 
-        public string Content { get; set; }
-
         public DateTime ReleaseDate { get; set; }
 
         public DateTime ModifyDate { get; set; }
 
-
+        public string Content { get; set; }
     }
 }
